@@ -52,6 +52,11 @@ app.get("/upload", (req, res) => {
   res.render("upload")
 })
 
+// An tron
+app.get("/upload", (req, res) => {
+  res.render("upload")
+})
+
 app.post("/upload", upload.single('img'), (req, res) => {
     console.log(req.file);
     console.log(req.body);
