@@ -52,6 +52,12 @@ app.post("/upload", upload.single('img'), (req, res) => {
     console.log(req.body);
 })
 
+//test thu
+app.get("/upload", upload.single('img'), (req, res) => {
+  console.log(req.file);
+  console.log(req.body);
+})
+
 // User route
 app.use("/users",requireAuth, userRoutes);
 
